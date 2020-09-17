@@ -5,7 +5,7 @@ export default function Person({ person }) {
   return (
     <li className={styles.hello}>
       <Link href="/person/[id]" as={`/person/${person.id}`}>
-        <a>{person.name}</a>
+        <button className={styles.estiloBotao}>{person.name}</button>
       </Link>
     </li>
   )
